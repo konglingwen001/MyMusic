@@ -7,7 +7,6 @@
 //
 #import <MediaPlayer/MediaPlayer.h>
 #import "ViewController.h"
-#import "NavigatorView.h"
 #import "MusicControl.h"
 #import "MusicToolView.h"
 #import "SearchViewController.h"
@@ -15,6 +14,7 @@
 #import "MusicLibraryViewController.h"
 #import "ToolViewController.h"
 #import "ModelDataController.h"
+#import "NavigatorTabBar.h"
 
 @interface ViewController ()<PresentViewControllerDelegate, NavigatorDelegate>
 
@@ -38,51 +38,30 @@
     _modelDataController = [ModelDataController sharedInstance];
     
     // 导航栏
-    navigatorView = [NavigatorView makeItem];
-    navigatorView.delegate = self;
-    [navigatorView setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.view addSubview:navigatorView];
     
-    // 中间内容界面
-    containerView = [[UIView alloc] init];
-    [containerView setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.view addSubview:containerView];
-    [self showViewController:[_modelDataController getTabBarSelectedIndex]];
+    NavigatorTabBar *myTabBar = [[NavigatorTabBar alloc] init];
+    myTabBar.tabBarView.delegate = self;
+    [self setValue:myTabBar forKey:@"tabBar"];
+    
+    SearchViewController *searchViewController = [[SearchViewController alloc] init];
+    MyMusicViewController *myMusicViewController = [[MyMusicViewController alloc] init];
+    MusicLibraryViewController *musicLibraryViewController = [[MusicLibraryViewController alloc] init];
+    ToolViewController *toolViewController = [[ToolViewController alloc] init];
+    //SettingViewController *settingViewController = [[SettingViewController alloc] init];
+
+    [self addChildViewController:searchViewController];
+    [self addChildViewController:myMusicViewController];
+    [self addChildViewController:musicLibraryViewController];
+    [self addChildViewController:toolViewController];
+    //[self addChildViewController:settingViewController];
     
     // 播放控制器
     musicToolView = [MusicToolView makeItem];
     _musicController.musicToolView = musicToolView;
     musicToolView.delegate = self;
-    [musicToolView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    //[musicToolView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [musicToolView setFrame:CGRectMake(0, self.view.frame.size.height - 80, self.view.frame.size.width, 80)];
     [self.view addSubview:musicToolView];
-    
-    // 导航栏约束添加
-    NSLayoutConstraint *naviLeft = [NSLayoutConstraint constraintWithItem:navigatorView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
-    NSLayoutConstraint *naviRight = [NSLayoutConstraint constraintWithItem:navigatorView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
-    NSLayoutConstraint *naviTop = [NSLayoutConstraint constraintWithItem:navigatorView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:20];
-    NSLayoutConstraint *naviHeight = [NSLayoutConstraint constraintWithItem:navigatorView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeHeight multiplier:1 constant:100];
-    
-    NSArray *naviConstraints = @[naviLeft, naviRight, naviTop];
-    [self.view addConstraints:naviConstraints];
-    [navigatorView addConstraint:naviHeight];
-    
-    // 中间内容界面约束添加
-    NSLayoutConstraint *containerViewLeft = [NSLayoutConstraint constraintWithItem:containerView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
-    NSLayoutConstraint *containerViewRight = [NSLayoutConstraint constraintWithItem:containerView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
-    NSLayoutConstraint *containerViewTop = [NSLayoutConstraint constraintWithItem:containerView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:navigatorView attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
-    NSLayoutConstraint *containerViewBottom = [NSLayoutConstraint constraintWithItem:containerView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:musicToolView attribute:NSLayoutAttributeTop multiplier:1 constant:0];
-    NSArray *containerConstraints = @[containerViewLeft, containerViewRight, containerViewTop, containerViewBottom];
-    [self.view addConstraints:containerConstraints];
-    
-    // 播放控制器约束添加
-    NSLayoutConstraint *musicToolLeft = [NSLayoutConstraint constraintWithItem:musicToolView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
-    NSLayoutConstraint *musicToolRight = [NSLayoutConstraint constraintWithItem:musicToolView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
-    NSLayoutConstraint *musicToolBottom = [NSLayoutConstraint constraintWithItem:musicToolView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:10];
-    NSLayoutConstraint *musicToolHeight = [NSLayoutConstraint constraintWithItem:musicToolView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeHeight multiplier:1 constant:100];
-    
-    NSArray *musicToolConstraints = @[musicToolLeft, musicToolRight, musicToolBottom];
-    [self.view addConstraints:musicToolConstraints];
-    [musicToolView addConstraint:musicToolHeight];
     
     
     // 监听系统音量改变
@@ -90,56 +69,16 @@
     
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [self.view bringSubviewToFront:musicToolView];
+}
+
 -(void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
--(void)showViewController:(int)viewControllerType {
-    
-    UIViewController *itemViewController;
-    switch (viewControllerType) {
-        case 0:
-            // 搜索界面
-            itemViewController = [[SearchViewController alloc] init];
-            itemView = [[[SearchViewController alloc] init] view];
-            break;
-        case 1:
-            // 我的音乐界面
-            itemViewController = [[MyMusicViewController alloc] init];
-            itemView = [[[MyMusicViewController alloc] init] view];
-            break;
-        case 2:
-            // 乐库界面
-            itemViewController = [[MusicLibraryViewController alloc] init];
-            itemView = [[[MusicLibraryViewController alloc] init] view];
-            break;
-        case 3:
-            // 工具界面
-            itemViewController = [[ToolViewController alloc] init];
-            itemView = [[[ToolViewController alloc] init] view];
-            break;
-            
-        default:
-            break;
-    }
-    [_modelDataController setTabBarSelectedIndex:viewControllerType];
-    [containerView addSubview:itemView];
-    [self addContainerConstraints:itemView];
-    [itemView layoutIfNeeded];
-    [itemView layoutSubviews];
-    
-    
-    //[self presentViewController:itemViewController animated:YES completion:nil];
-}
-
--(void)addContainerConstraints:(UIView *)view {
-    [view setTranslatesAutoresizingMaskIntoConstraints:NO];
-    NSLayoutConstraint *containerViewLeft = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:containerView attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
-    NSLayoutConstraint *containerViewRight = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:containerView attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
-    NSLayoutConstraint *containerViewTop = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:containerView attribute:NSLayoutAttributeTop multiplier:1 constant:0];
-    NSLayoutConstraint *containerViewBottom = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:containerView attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
-    NSArray *containerConstraints = @[containerViewLeft, containerViewRight, containerViewTop, containerViewBottom];
-    [containerView addConstraints:containerConstraints];
+-(void)myTabBarView:(NavigatorView *)view didSelectItemAtIndex:(NSInteger)index {
+    self.selectedIndex = index;
 }
 
 /*! 

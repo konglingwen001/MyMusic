@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GuitarNotesView">
+            <rect key="frame" x="0.0" y="0.0" width="604" height="205"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mi-9j-Y55" userLabel="BarNo">
+                    <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNN-gd-4lg" userLabel="Notes">
+                    <rect key="frame" x="0.0" y="21" width="604" height="154"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTL-P3-tds" userLabel="Left">
+                            <rect key="frame" x="0.0" y="21" width="2" height="112"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="2" id="HrJ-CB-03Y"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="zCV-6F-8Ms">
+                            <rect key="frame" x="2" y="0.0" width="600" height="154"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5RH-AE-8FW" userLabel="Top">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" id="EJJ-Wy-MFY"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VvR-qj-5rU" userLabel="Chord1">
+                                    <rect key="frame" x="0.0" y="21" width="600" height="1"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="fPd-YX-hri"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XpV-y4-EnM" userLabel="Chord2">
+                                    <rect key="frame" x="0.0" y="43.5" width="600" height="1"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="IpD-Ei-NKD"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrV-E1-IwJ" userLabel="Chord3">
+                                    <rect key="frame" x="0.0" y="65.5" width="600" height="1"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Xw0-6H-1a5"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQE-a3-GUx" userLabel="Chord4">
+                                    <rect key="frame" x="0.0" y="87.5" width="600" height="1"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="tb4-1i-mvk"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grS-D0-fJH" userLabel="Chord5">
+                                    <rect key="frame" x="0.0" y="109.5" width="600" height="1"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="8yt-ge-eYN"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5p-LB-CVC" userLabel="Chord6">
+                                    <rect key="frame" x="0.0" y="132" width="600" height="1"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="2cW-iZ-lhQ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0i-3W-hl1" userLabel="Bottom">
+                                    <rect key="frame" x="0.0" y="154" width="600" height="0.0"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" id="ael-1I-tKH"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUh-Ez-Bdw" userLabel="Right">
+                            <rect key="frame" x="602" y="21" width="2" height="112"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="2" id="NcN-ua-N2l"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zCV-6F-8Ms" firstAttribute="top" secondItem="qNN-gd-4lg" secondAttribute="top" id="3Jt-xl-KdH"/>
+                        <constraint firstAttribute="trailing" secondItem="bUh-Ez-Bdw" secondAttribute="trailing" id="EY2-Iy-0TL"/>
+                        <constraint firstItem="VvR-qj-5rU" firstAttribute="top" secondItem="BTL-P3-tds" secondAttribute="top" id="K3h-eX-JvH"/>
+                        <constraint firstAttribute="bottom" secondItem="zCV-6F-8Ms" secondAttribute="bottom" id="TBF-Ia-1Fh"/>
+                        <constraint firstItem="X5p-LB-CVC" firstAttribute="bottom" secondItem="BTL-P3-tds" secondAttribute="bottom" id="Tcl-sy-Tre"/>
+                        <constraint firstItem="zCV-6F-8Ms" firstAttribute="leading" secondItem="BTL-P3-tds" secondAttribute="trailing" id="WAy-QP-iev"/>
+                        <constraint firstItem="bUh-Ez-Bdw" firstAttribute="leading" secondItem="zCV-6F-8Ms" secondAttribute="trailing" id="Za7-qv-Fni"/>
+                        <constraint firstItem="bUh-Ez-Bdw" firstAttribute="top" secondItem="VvR-qj-5rU" secondAttribute="top" id="Ze2-MW-glE"/>
+                        <constraint firstItem="bUh-Ez-Bdw" firstAttribute="bottom" secondItem="X5p-LB-CVC" secondAttribute="bottom" id="eYZ-Ly-t7a"/>
+                        <constraint firstItem="BTL-P3-tds" firstAttribute="leading" secondItem="qNN-gd-4lg" secondAttribute="leading" id="qWn-nm-MQn"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqT-Cy-F3E" userLabel="NoteSpace">
+                    <rect key="frame" x="0.0" y="175" width="604" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="WDp-CU-0f6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7mi-9j-Y55" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0Ac-Dc-LZK"/>
+                <constraint firstItem="qNN-gd-4lg" firstAttribute="top" secondItem="7mi-9j-Y55" secondAttribute="bottom" id="1Rd-LC-8qv"/>
+                <constraint firstAttribute="trailing" secondItem="zqT-Cy-F3E" secondAttribute="trailing" id="2cb-rn-Zc5"/>
+                <constraint firstItem="qNN-gd-4lg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="U6X-27-yz0"/>
+                <constraint firstAttribute="bottom" secondItem="zqT-Cy-F3E" secondAttribute="bottom" id="VTT-Rc-SPO"/>
+                <constraint firstItem="zqT-Cy-F3E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yeu-qJ-uu9"/>
+                <constraint firstItem="zqT-Cy-F3E" firstAttribute="top" secondItem="qNN-gd-4lg" secondAttribute="bottom" id="bp3-6a-QHd"/>
+                <constraint firstItem="7mi-9j-Y55" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eRC-oq-jZb"/>
+                <constraint firstAttribute="trailing" secondItem="qNN-gd-4lg" secondAttribute="trailing" id="wjl-Bc-Ssk"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chord1" destination="VvR-qj-5rU" id="sLZ-YM-2fF"/>
+                <outlet property="chord2" destination="XpV-y4-EnM" id="HQ4-tB-GKz"/>
+                <outlet property="chord3" destination="hrV-E1-IwJ" id="mos-0f-rpf"/>
+                <outlet property="chord4" destination="mQE-a3-GUx" id="Mrb-JV-zR5"/>
+                <outlet property="chord5" destination="grS-D0-fJH" id="WFN-TO-aoe"/>
+                <outlet property="chord6" destination="b0i-3W-hl1" id="3wK-7N-hGP"/>
+                <outlet property="lblBarNo" destination="7mi-9j-Y55" id="5Xo-9o-a6t"/>
+                <outlet property="noteStackView" destination="zCV-6F-8Ms" id="X43-dC-nm6"/>
+                <outlet property="notes" destination="qNN-gd-4lg" id="2Qu-3A-SM6"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="-298.5"/>
+        </view>
+    </objects>
+</document>

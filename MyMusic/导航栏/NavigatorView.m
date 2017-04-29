@@ -10,12 +10,13 @@
 #import "NavigatorItem.h"
 
 @implementation NavigatorView
-
+{
 NavigatorItem *searchItem;
 NavigatorItem *myMusicItem;
 NavigatorItem *musicLibraryItem;
 NavigatorItem *toolItem;
 NavigatorItem *settingItem;
+}
 
 /*!
  * @brief 实例化
@@ -27,6 +28,7 @@ NavigatorItem *settingItem;
 
 -(void)awakeFromNib {
     [super awakeFromNib];
+    
     
     [self addNavigatorItems];
     [self setNavigatorItemConstraint];
@@ -47,7 +49,9 @@ NavigatorItem *settingItem;
     [myMusicItem setSelected:NO withImage:[UIImage imageNamed:@"我的音乐1.png"]];
     [musicLibraryItem setSelected:NO withImage:[UIImage imageNamed:@"乐库1.png"]];
     [toolItem setSelected:NO withImage:[UIImage imageNamed:@"工具1.png"]];
-    [self.delegate showViewController:0];
+    if ([self.delegate respondsToSelector:@selector(myTabBarView:didSelectItemAtIndex:)]) {
+        [self.delegate myTabBarView:self didSelectItemAtIndex:0];
+    }
 }
 
 -(void)myMusicItemClicked {
@@ -56,7 +60,9 @@ NavigatorItem *settingItem;
     [myMusicItem setSelected:YES withImage:[UIImage imageNamed:@"我的音乐2.png"]];
     [musicLibraryItem setSelected:NO withImage:[UIImage imageNamed:@"乐库1.png"]];
     [toolItem setSelected:NO withImage:[UIImage imageNamed:@"工具1.png"]];
-    [self.delegate showViewController:1];
+    if ([self.delegate respondsToSelector:@selector(myTabBarView:didSelectItemAtIndex:)]) {
+        [self.delegate myTabBarView:self didSelectItemAtIndex:1];
+    }
 }
 
 -(void)musicLibraryItemClicked {
@@ -65,7 +71,9 @@ NavigatorItem *settingItem;
     [myMusicItem setSelected:NO withImage:[UIImage imageNamed:@"我的音乐1.png"]];
     [musicLibraryItem setSelected:YES withImage:[UIImage imageNamed:@"乐库2.png"]];
     [toolItem setSelected:NO withImage:[UIImage imageNamed:@"工具1.png"]];
-    [self.delegate showViewController:2];
+    if ([self.delegate respondsToSelector:@selector(myTabBarView:didSelectItemAtIndex:)]) {
+        [self.delegate myTabBarView:self didSelectItemAtIndex:2];
+    }
 }
 
 -(void)toolItemClicked {
@@ -74,7 +82,9 @@ NavigatorItem *settingItem;
     [myMusicItem setSelected:NO withImage:[UIImage imageNamed:@"我的音乐1.png"]];
     [musicLibraryItem setSelected:NO withImage:[UIImage imageNamed:@"乐库1.png"]];
     [toolItem setSelected:YES withImage:[UIImage imageNamed:@"工具2.png"]];
-    [self.delegate showViewController:3];
+    if ([self.delegate respondsToSelector:@selector(myTabBarView:didSelectItemAtIndex:)]) {
+        [self.delegate myTabBarView:self didSelectItemAtIndex:3];
+    }
 }
 
 -(void)settingItemClicked {
@@ -83,6 +93,9 @@ NavigatorItem *settingItem;
     [myMusicItem setSelected:NO withImage:[UIImage imageNamed:@"我的音乐1.png"]];
     [musicLibraryItem setSelected:NO withImage:[UIImage imageNamed:@"乐库1.png"]];
     [toolItem setSelected:NO withImage:[UIImage imageNamed:@"工具1.png"]];
+    if ([self.delegate respondsToSelector:@selector(myTabBarView:didSelectItemAtIndex:)]) {
+        [self.delegate myTabBarView:self didSelectItemAtIndex:4];
+    }
 }
 
 -(void)addNavigatorItems {
@@ -90,32 +103,38 @@ NavigatorItem *settingItem;
     searchItem = [[[NSBundle mainBundle] loadNibNamed:@"NavigatorItem" owner:self options:nil] firstObject];
     [searchItem setImage:[UIImage imageNamed:@"搜索1.png"]];
     [searchItem setName:@"搜索"];
+    [searchItem setTag:0];
     [searchItem setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self addSubview:searchItem];
     
     myMusicItem = [[[NSBundle mainBundle] loadNibNamed:@"NavigatorItem" owner:self options:nil] firstObject];
     [myMusicItem setImage:[UIImage imageNamed:@"我的音乐1.png"]];
     [myMusicItem setName:@"我的音乐"];
+    [searchItem setTag:1];
     [myMusicItem setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self addSubview:myMusicItem];
     
     musicLibraryItem = [[[NSBundle mainBundle] loadNibNamed:@"NavigatorItem" owner:self options:nil] firstObject];
     [musicLibraryItem setImage:[UIImage imageNamed:@"乐库1.png"]];
     [musicLibraryItem setName:@"乐库"];
+    [searchItem setTag:2];
     [musicLibraryItem setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self addSubview:musicLibraryItem];
     
     toolItem = [[[NSBundle mainBundle] loadNibNamed:@"NavigatorItem" owner:self options:nil] firstObject];
     [toolItem setImage:[UIImage imageNamed:@"工具1.png"]];
     [toolItem setName:@"工具"];
+    [searchItem setTag:3];
     [toolItem setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self addSubview:toolItem];
     
     settingItem = [[[NSBundle mainBundle] loadNibNamed:@"NavigatorItem" owner:self options:nil] firstObject];
     [settingItem setImage:[UIImage imageNamed:@"设置.png"]];
     [settingItem setName:@"设置"];
+    [searchItem setTag:4];
     [settingItem setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self addSubview:settingItem];
+    
 }
 
 -(void)setNavigatorItemConstraint {

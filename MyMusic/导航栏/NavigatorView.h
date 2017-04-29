@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class NavigatorView;
+
 @protocol NavigatorDelegate <NSObject>
 
--(void)showViewController:(int)viewControllerType;
+- (void)myTabBarView:(NavigatorView *)view didSelectItemAtIndex:(NSInteger)index;
 
 @end
 

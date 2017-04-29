@@ -12,44 +12,44 @@
 
 #pragma mark ---- 单例模式生成实例
 
-static id _instance = nil;
-
-/*!
- * @brief 获取单例播放器类
- 
- * @return 播放器实例
- */
-+(instancetype)sharedInstance {
-    if (_instance == nil) {
-        _instance = [[self alloc] init];
-    }
-    return _instance;
-}
-
-+(instancetype)allocWithZone:(struct _NSZone *)zone {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _instance = [super allocWithZone:zone];
-    });
-    return _instance;
-}
-
--(instancetype)init {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _instance = [super init];
-        
-    });
-    return _instance;
-}
-
--(id)copy {
-    return _instance;
-}
-
--(id)mutableCopy {
-    return _instance;
-}
+//static id _instance = nil;
+//
+///*!
+// * @brief 获取单例播放器类
+// 
+// * @return 播放器实例
+// */
+//+(instancetype)sharedInstance {
+//    if (_instance == nil) {
+//        _instance = [[self alloc] init];
+//    }
+//    return _instance;
+//}
+//
+//+(instancetype)allocWithZone:(struct _NSZone *)zone {
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        _instance = [super allocWithZone:zone];
+//    });
+//    return _instance;
+//}
+//
+//-(instancetype)init {
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        _instance = [super init];
+//        
+//    });
+//    return _instance;
+//}
+//
+//-(id)copy {
+//    return _instance;
+//}
+//
+//-(id)mutableCopy {
+//    return _instance;
+//}
 
 -(void)viewDidLoad {
     [super viewDidLoad];
