@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BarNum</key>
-	<integer>0</integer>
+	<integer>51</integer>
 	<key>Flat</key>
 	<string></string>
 	<key>Time</key>
@@ -67,7 +67,7 @@
 										<key>FretNo</key>
 										<string>12</string>
 										<key>NoteType</key>
-										<string>-</string>
+										<string>4</string>
 										<key>PlayType</key>
 										<string>Legayo</string>
 									</dict>
@@ -77,7 +77,7 @@
 										<key>FretNo</key>
 										<string>12</string>
 										<key>NoteType</key>
-										<string>-</string>
+										<string>4</string>
 										<key>PlayType</key>
 										<string>Legayo</string>
 									</dict>
@@ -87,7 +87,7 @@
 										<key>FretNo</key>
 										<string>12</string>
 										<key>NoteType</key>
-										<string>-</string>
+										<string>4</string>
 										<key>PlayType</key>
 										<string>Legayo</string>
 									</dict>
@@ -107,7 +107,7 @@
 										<key>FretNo</key>
 										<string>12</string>
 										<key>NoteType</key>
-										<string>-</string>
+										<string>4</string>
 										<key>PlayType</key>
 										<string>Legayo</string>
 									</dict>
@@ -117,7 +117,7 @@
 										<key>FretNo</key>
 										<string>12</string>
 										<key>NoteType</key>
-										<string>-</string>
+										<string>4</string>
 										<key>PlayType</key>
 										<string>Legayo</string>
 									</dict>
@@ -127,7 +127,7 @@
 										<key>FretNo</key>
 										<string>12</string>
 										<key>NoteType</key>
-										<string>-</string>
+										<string>4</string>
 										<key>PlayType</key>
 										<string>Legayo</string>
 									</dict>
@@ -218,6 +218,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -248,6 +253,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -263,6 +273,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -328,6 +343,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -358,6 +378,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -373,6 +398,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -438,6 +468,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -468,12 +503,17 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
 									<dict>
 										<key>StringNo</key>
-										<integer>0</integer>
+										<integer>1</integer>
 										<key>FretNo</key>
 										<string>0</string>
 										<key>NoteType</key>
@@ -483,12 +523,17 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
 									<dict>
 										<key>StringNo</key>
-										<integer>0</integer>
+										<integer>1</integer>
 										<key>FretNo</key>
 										<string>3</string>
 										<key>NoteType</key>
@@ -548,6 +593,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -578,6 +628,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -593,6 +648,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -658,6 +718,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -688,6 +753,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -703,6 +773,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -768,6 +843,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -798,6 +878,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -828,6 +913,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -908,6 +998,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -938,6 +1033,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -953,6 +1053,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1018,6 +1123,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1048,6 +1158,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1143,6 +1258,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1173,6 +1293,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1188,6 +1313,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1253,6 +1383,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1283,6 +1418,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1298,6 +1438,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1363,6 +1508,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1393,6 +1543,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1408,6 +1563,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1473,6 +1633,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1503,6 +1668,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1518,6 +1688,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1598,6 +1773,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1628,6 +1808,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1658,6 +1843,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1743,6 +1933,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1758,6 +1953,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1798,6 +1998,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1898,6 +2103,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1913,6 +2123,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -1948,6 +2163,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2013,6 +2233,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2043,6 +2268,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2058,6 +2288,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2138,6 +2373,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2168,6 +2408,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2193,6 +2438,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2258,6 +2508,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2288,6 +2543,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2303,6 +2563,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2383,6 +2648,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2413,6 +2683,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2458,6 +2733,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2523,6 +2803,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2553,6 +2838,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2568,6 +2858,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2643,6 +2938,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2673,6 +2973,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2723,6 +3028,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2803,6 +3113,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2833,6 +3148,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2873,6 +3193,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2953,6 +3278,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -2983,6 +3313,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3028,6 +3363,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3093,6 +3433,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3123,6 +3468,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3153,6 +3503,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3223,6 +3578,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3253,6 +3613,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3268,6 +3633,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3333,6 +3703,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3363,6 +3738,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3393,6 +3773,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3473,6 +3858,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3503,6 +3893,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3518,6 +3913,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3568,6 +3968,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3598,6 +4003,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3613,6 +4023,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3678,6 +4093,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3708,6 +4128,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3723,6 +4148,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3798,6 +4228,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3828,6 +4263,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3858,6 +4298,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3938,6 +4383,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3968,6 +4418,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -3983,6 +4438,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4048,6 +4508,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4078,6 +4543,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4093,6 +4563,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4168,6 +4643,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4198,6 +4678,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4223,6 +4708,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4276,6 +4766,11 @@
 										<key>PlayType</key>
 										<string>Normal</string>
 									</dict>
+								</array>
+							</dict>
+							<dict>
+								<key>Note</key>
+								<array>
 									<dict>
 										<key>StringNo</key>
 										<integer>2</integer>
@@ -4288,6 +4783,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4318,6 +4818,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4333,6 +4838,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4388,6 +4898,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4418,6 +4933,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4433,6 +4953,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4503,6 +5028,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4533,6 +5063,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4548,6 +5083,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4603,6 +5143,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4633,6 +5178,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4648,6 +5198,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4718,6 +5273,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4748,6 +5308,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4763,6 +5328,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4818,6 +5388,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4848,6 +5423,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4878,6 +5458,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4948,6 +5533,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4978,6 +5568,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -4993,6 +5588,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5048,6 +5648,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5078,6 +5683,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5093,6 +5703,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5173,6 +5788,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5203,6 +5823,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5218,6 +5843,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5283,6 +5913,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5313,6 +5948,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5328,6 +5968,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5393,6 +6038,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5423,6 +6073,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5438,6 +6093,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5503,6 +6163,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5533,6 +6198,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5548,6 +6218,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5628,6 +6303,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5658,6 +6338,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5688,6 +6373,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5758,6 +6448,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5788,6 +6483,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5818,6 +6518,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5918,6 +6623,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5933,6 +6643,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -5968,6 +6683,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -6033,6 +6753,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -6063,6 +6788,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -6078,6 +6808,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -6178,6 +6913,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -6193,6 +6933,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -6228,6 +6973,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -6293,6 +7043,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>
@@ -6321,6 +7076,16 @@
 										<key>PlayType</key>
 										<string>Normal</string>
 									</dict>
+								</array>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
+							<dict>
+								<key>Note</key>
+								<array>
 									<dict>
 										<key>StringNo</key>
 										<integer>2</integer>
@@ -6331,6 +7096,11 @@
 										<key>PlayType</key>
 										<string>Normal</string>
 									</dict>
+								</array>
+							</dict>
+							<dict>
+								<key>Note</key>
+								<array>
 									<dict>
 										<key>StringNo</key>
 										<integer>1</integer>
@@ -6343,6 +7113,11 @@
 									</dict>
 								</array>
 							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>NoteNo</key>
+						<array>
 							<dict>
 								<key>Note</key>
 								<array>

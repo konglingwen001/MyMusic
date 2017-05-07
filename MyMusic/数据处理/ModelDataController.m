@@ -363,7 +363,7 @@ static id _instance = nil;
  * @discussion 获取自建歌单数
  */
 -(int)getMyMuiscListNum {
-    return [[myMusicList allKeys] count];
+    return (int)[[myMusicList allKeys] count];
 }
 
 /*!
