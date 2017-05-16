@@ -7,8 +7,14 @@
 //
 
 #import "MusicLibraryViewController.h"
+#import "NotesModel2.h"
+#import "MyGuitarNotesView2.h"
 
-@implementation MusicLibraryViewController
+@implementation MusicLibraryViewController {
+    NotesModel2 *notesModel;
+    MyGuitarNotesView2 *testView;
+    int barNum;
+}
 
 #pragma mark ---- 单例模式生成实例
 
@@ -53,6 +59,20 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    
+    notesModel = [NotesModel2 sharedInstance];
+    [notesModel setGuitarNotesWithNotesName:@"天空之城version3"];
+    int lineNum = (int)[notesModel getNotesSize].count;
+    NSDictionary *rootNoteDic = [notesModel getRootNotes];
+    barNum = [[rootNoteDic valueForKey:@"BarNum"] intValue];
+    
+    testView = [[MyGuitarNotesView2 alloc] initWithNotes:rootNoteDic];
+    [testView setFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 100)];
+    [testView setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:testView];
+    
+    [testView setContentSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 15 + lineNum * 150)];
+    [testView setScrollEnabled:YES];
 }
 
 /*

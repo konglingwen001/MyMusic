@@ -20,7 +20,7 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    notesModel = [[NotesModel alloc] initWithNotesName:@"天空之城"];
+    notesModel = [[NotesModel alloc] initWithNotesName:@"天空之城version1"];
     int lineNum = (int)[notesModel getNotesSize].count;
     NSDictionary *rootNoteDic = [notesModel getRootNotes];
     barNum = [[rootNoteDic valueForKey:@"BarNum"] intValue];
@@ -30,7 +30,7 @@
     [testView setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:testView];
     
-    [testView setContentSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, lineNum * 150)];
+    [testView setContentSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 15 + lineNum * 150)];
     [testView setScrollEnabled:YES];
     
 }

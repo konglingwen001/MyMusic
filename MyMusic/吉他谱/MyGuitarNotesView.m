@@ -21,7 +21,7 @@
 
 -(instancetype)initWithNotes:(NSDictionary *)notesDic {
     if (self = [super init]) {
-        notesModel = [[NotesModel alloc] initWithNotesName:@"天空之城"];
+        notesModel = [[NotesModel alloc] initWithNotesName:@"天空之城version1"];
         guitarNotes = notesDic;
         barNum = [[guitarNotes valueForKey:@"BarNum"] intValue];
         self.delegate = self;
@@ -43,13 +43,15 @@
     UITouch *touch = touches.allObjects[0];
     CGPoint point = [touch locationInView:[touch view]];
     
-    CGSize size = CGSizeMake([UIScreen mainScreen].bounds.size.width, 150 * (barNum / 4 + 1));
+    int lineNum = (int)[notesModel getNotesSize].count;
+    CGSize size = CGSizeMake([UIScreen mainScreen].bounds.size.width, 15 + lineNum * 150);
     UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
     [notesImage drawInRect:CGRectMake(0, 0, notesImage.size.width, notesImage.size.height)];
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetRGBFillColor(context, 0, 1, 1, 1);
     CGContextFillRect(context, [self calRectFromPoint:point]);
+    //CGContextFillRect(context, CGRectMake(point.x, point.y, 15, 15));
     CGContextStrokePath(context);
     
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -59,21 +61,84 @@
 
 -(CGRect)calRectFromPoint:(CGPoint)point {
     int rowNo = (point.y - 15) / 150;
-    int colNo = (point.x - 50) / 150;
     
     if (150 * rowNo + 15 + 75 + 7.5 < point.y) {
         return CGRectZero;
     }
     
-    int barNo = rowNo * 4 + colNo;
-    int startX, startY;
-    float barStartX = 50 + colNo * 150;
-    float barStartY = 15 + rowNo * 150;
+    NSDictionary *lineSizeDic = [notesModel getNotesSize][rowNo];
+    float minimWidth = [[lineSizeDic valueForKey:@"minimWidth"] floatValue];
+    float crotchetaWidth = [[lineSizeDic valueForKey:@"crotchetaWidth"] floatValue];
+    float quaverWidth = [[lineSizeDic valueForKey:@"quaverWidth"] floatValue];
+    float demiquaverWidth = [[lineSizeDic valueForKey:@"demiquaverWidth"] floatValue];
+    int barNo = [[lineSizeDic valueForKey:@"startBarNo"] intValue];
     
-    int stringNo = (point.y + 7.5) / 15;
-    startY = stringNo * 15 - 7.5;
-    startX = point.x;
-    return CGRectMake(startX, startY, 15, 15);
+    int barStartX = 50;
+    int barStartY = 15 + rowNo * 150;
+    NSArray *barWidthArray = [lineSizeDic valueForKey:@"barWidth"];
+    
+    // 判断触摸位置所属的小节，i从1开始，因为barWidthArray[0] == 0
+    for (int i = 1; i < barWidthArray.count; i++) {
+        float width = [barWidthArray[i] floatValue];
+        if (point.x > 50 + width) {
+            barNo++;
+            barStartX = 50 + width;
+        } else {
+            break;
+        }
+    }
+    
+    float notePosX = 0;
+    float notePosY = 0;
+    int stringNo = floorf((point.y - barStartY) / 15);
+    notePosY = barStartY + stringNo * 15 - 7.5;
+    int addPosX = barStartX, preAddPosX;
+    float currentWidth = 0;
+    
+    NSArray *beatsArray = [notesModel getBeatNotesWithBarNo:barNo];
+    for (int beatNo = 0; beatNo < beatsArray.count; beatNo++) {
+        NSDictionary *beatsDic = beatsArray[beatNo];
+        NSArray *noteNoArray = [beatsDic valueForKey:@"NoteNo"];
+        for (int noteNo = 0; noteNo < noteNoArray.count; noteNo++) {
+            NSDictionary *notes = noteNoArray[noteNo];
+            NSDictionary *note = [notes valueForKey:@"Note"][0];
+            NSString *noteType = [note valueForKey:@"NoteType"];
+            
+            
+            if ([noteType isEqualToString:@"2"]) {
+                currentWidth = minimWidth;
+            } else if ([noteType isEqualToString:@"4"]) {
+                currentWidth = crotchetaWidth;
+            } else if ([noteType isEqualToString:@"8"]) {
+                currentWidth = quaverWidth;
+            } else if ([noteType isEqualToString:@"16"]) {
+                currentWidth =  demiquaverWidth;
+            }
+            preAddPosX = addPosX;
+            addPosX += currentWidth;
+            
+            if (point.x < addPosX) {
+                
+                if (beatNo == 0 && noteNo == 0) {
+                    notePosX = addPosX;
+                } else if (point.x > addPosX - currentWidth / 2) {
+                    notePosX = addPosX;
+                } else {
+                    notePosX = preAddPosX;
+                }
+                return CGRectMake(notePosX, notePosY, 15, 15);
+                
+            } else {
+                if (beatNo == beatsArray.count - 1 && noteNo == noteNoArray.count - 1) {
+                    notePosX = addPosX;
+                    return CGRectMake(notePosX, notePosY, 15, 15);
+                }
+            }
+            
+        }
+    }
+    
+    return CGRectMake(notePosX, notePosY, 15, 15);
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
@@ -172,7 +237,7 @@
                     NSDictionary *note = [notes objectAtIndex:i];
                     int stringNo = [[note valueForKey:@"StringNo"] intValue];
                     
-                    NSString *fretNo = [note valueForKey:@"FretNo"];
+                    NSString *fretNo = [[note valueForKey:@"FretNo"] stringValue];
                     CGSize noteSize = [MusicUtils calSize:fretNo WithFont:[UIFont systemFontOfSize:12.0]];
                     
                     notePosY = barStartY + (stringNo - 1) * 15 - noteSize.height / 2 + 0.5;
