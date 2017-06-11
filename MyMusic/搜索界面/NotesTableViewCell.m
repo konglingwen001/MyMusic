@@ -7,17 +7,17 @@
 //
 
 #import "NotesTableViewCell.h"
-#import "NotesModel2.h"
+#import "NotesModel.h"
 
 @implementation NotesTableViewCell {
-    NotesModel2 *notesModel;
+    NotesModel *notesModel;
     NSDictionary *guitarNotes;
 }
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-    notesModel = [NotesModel2 sharedInstance];
+    notesModel = [NotesModel sharedInstance];
     guitarNotes = [notesModel getRootNotes];
 }
 
@@ -112,8 +112,7 @@
     
     NSMutableArray *noteNoArray = [notesModel getNoteNoArrayWithBarNo:barNo];
     for (int noteNo = 0; noteNo < noteNoArray.count; noteNo++) {
-        NSDictionary *note = noteNoArray[noteNo][0];
-        NSString *noteType = [note valueForKey:@"NoteType"];
+        NSString *noteType = [notesModel getNoteTypeWithBarNo:barNo andNoteNo:noteNo];
         
         if ([noteType isEqualToString:@"2"]) {
             currentWidth = minimWidth;

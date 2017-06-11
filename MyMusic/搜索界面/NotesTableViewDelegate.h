@@ -12,4 +12,8 @@
 
 -(void)reloadNotesData;
 
+-(void)testPlay;
+
+-(void)testStop;
+
 @end

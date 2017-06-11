@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -109,6 +109,38 @@
                         <action selector="insertBar:" destination="iN0-l3-epB" eventType="touchUpInside" id="q6C-fW-Xi3"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mu-Ng-cwk">
+                    <rect key="frame" x="317" y="56" width="99" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="删除音符"/>
+                    <connections>
+                        <action selector="removeNote:" destination="iN0-l3-epB" eventType="touchUpInside" id="u5s-TU-FYy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJ1-Yv-wXQ">
+                    <rect key="frame" x="194" y="56" width="91" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="testStop"/>
+                    <connections>
+                        <action selector="testStop:" destination="iN0-l3-epB" eventType="touchUpInside" id="AFW-Mb-gH7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfY-DY-Rni">
+                    <rect key="frame" x="84" y="55" width="90" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="testPlay"/>
+                    <connections>
+                        <action selector="testPlay:" destination="iN0-l3-epB" eventType="touchUpInside" id="9cn-Ae-xKl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRn-K0-JG8">
+                    <rect key="frame" x="10" y="55" width="66" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="test"/>
+                    <connections>
+                        <action selector="test:" destination="iN0-l3-epB" eventType="touchUpInside" id="X23-ee-fYA"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -131,6 +163,7 @@
                 <outlet property="btnNum8" destination="xmb-zO-wJm" id="gAJ-g2-sgq"/>
                 <outlet property="btnNum9" destination="cWi-MT-aFr" id="yKw-4X-SN2"/>
                 <outlet property="btnRemoveBar" destination="x1B-tM-uzK" id="Y50-IE-uTc"/>
+                <outlet property="btnRemoveNote" destination="4Mu-Ng-cwk" id="6YI-aL-3xI"/>
             </connections>
             <point key="canvasLocation" x="50" y="-107"/>
         </view>

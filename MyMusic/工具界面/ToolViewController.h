@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YYSampler.h"
 
 @interface ToolViewController : UIViewController<UIScrollViewDelegate>
+
+@property (nonatomic, retain) YYSampler *sampler;
 
 @end

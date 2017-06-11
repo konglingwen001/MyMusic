@@ -7,19 +7,19 @@
 //
 
 #import "EditNotesView.h"
-#import "NotesModel2.h"
+#import "NotesModel.h"
 
 @interface EditNotesView ()
 
-@property (strong, nonatomic) NotesModel2 * notesModel;
+@property (strong, nonatomic) NotesModel * notesModel;
 
 @end
 
 @implementation EditNotesView
 
--(NotesModel2 *)notesModel {
+-(NotesModel *)notesModel {
     if (_notesModel == nil) {
-        _notesModel = [NotesModel2 sharedInstance];
+        _notesModel = [NotesModel sharedInstance];
     }
     return _notesModel;
 }
@@ -47,9 +47,34 @@
         [self.delegate reloadNotesData];
     }
 }
+- (IBAction)removeNote:(id)sender {
+    [self.notesModel removeEditNote];
+    if ([self.delegate respondsToSelector:@selector(reloadNotesData)]) {
+        [self.delegate reloadNotesData];
+    }
+}
 
 - (IBAction)removeBar:(id)sender {
+    [self.notesModel removeBar];
+    if ([self.delegate respondsToSelector:@selector(reloadNotesData)]) {
+        [self.delegate reloadNotesData];
+    }
 }
+- (IBAction)testPlay:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(testPlay)]) {
+        [self.delegate testPlay];
+    }
+}
+
+- (IBAction)testStop:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(testStop)]) {
+        [self.delegate testStop];
+    }
+}
+- (IBAction)test:(id)sender {
+    [self.notesModel test];
+}
+
 
 
 /*

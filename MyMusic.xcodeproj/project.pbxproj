@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0395EC1ED183BD00C152BC /* G103.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D0395EB1ED183BD00C152BC /* G103.mp3 */; };
+		8D054B3C1ED32075008F3673 /* Tutorial-2.mid in Resources */ = {isa = PBXBuildFile; fileRef = 8D054B3B1ED32075008F3673 /* Tutorial-2.mid */; };
+		8D1034D31EE75BF500751D24 /* CreateGuitarNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1034D11EE75BF500751D24 /* CreateGuitarNotesViewController.m */; };
+		8D1034D41EE75BF500751D24 /* CreateGuitarNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1034D21EE75BF500751D24 /* CreateGuitarNotesViewController.xib */; };
 		8D13E38A1EC7F4F100051995 /* 天空之城version3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D13E3891EC7F4F100051995 /* 天空之城version3.plist */; };
 		8D15DE211E9FB12400F8F4C4 /* ModelDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D15DE201E9FB12400F8F4C4 /* ModelDataController.m */; };
 		8D1C9FF21E7E0F5500C0101D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1C9FF11E7E0F5500C0101D /* main.m */; };
@@ -23,8 +27,8 @@
 		8D319A271EB3A7A200358641 /* 工具1@.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D319A241EB3A7A100358641 /* 工具1@.png */; };
 		8D319A281EB3A7A200358641 /* 乐库1@.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D319A251EB3A7A100358641 /* 乐库1@.png */; };
 		8D319A291EB3A7A200358641 /* 搜索1@.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D319A261EB3A7A100358641 /* 搜索1@.png */; };
-		8D319A2C1EB432EA00358641 /* NotesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D319A2B1EB432EA00358641 /* NotesModel.m */; };
 		8D319A2E1EB573EE00358641 /* 天空之城version1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D319A2D1EB573EE00358641 /* 天空之城version1.plist */; };
+		8D45A4E71ECE538D003AE999 /* 天空之城version4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D45A4E61ECE538D003AE999 /* 天空之城version4.plist */; };
 		8D4835E61E9BCDA800A70BCC /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4835E41E9BCDA800A70BCC /* SearchViewController.xib */; };
 		8D4835EB1E9BCDB800A70BCC /* MusicLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4835E91E9BCDB800A70BCC /* MusicLibraryViewController.xib */; };
 		8D4835F01E9BCDC300A70BCC /* ToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4835EE1E9BCDC300A70BCC /* ToolViewController.xib */; };
@@ -32,8 +36,6 @@
 		8D4835F61E9BD11900A70BCC /* MusicLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4835F51E9BD11900A70BCC /* MusicLibraryViewController.m */; };
 		8D4835F91E9BD13700A70BCC /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4835F81E9BD13700A70BCC /* SearchViewController.m */; };
 		8D5676911EC1EE3A0071D58B /* 天空之城version2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D5676901EC1EE3A0071D58B /* 天空之城version2.plist */; };
-		8D5676941EC1F0BF0071D58B /* NotesModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5676931EC1F0BF0071D58B /* NotesModel2.m */; };
-		8D5676971EC209C50071D58B /* MyGuitarNotesView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5676961EC209C50071D58B /* MyGuitarNotesView2.m */; };
 		8D61E18B1E99C0C100B2DDA9 /* MusicUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D61E18A1E99C0C100B2DDA9 /* MusicUtils.m */; };
 		8D61E18E1E99C0CF00B2DDA9 /* MusicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D61E18D1E99C0CF00B2DDA9 /* MusicControl.m */; };
 		8D61E19D1E99C0DE00B2DDA9 /* 播放.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D61E18F1E99C0DE00B2DDA9 /* 播放.png */; };
@@ -68,10 +70,16 @@
 		8D687B5E1E99EA1600F10C86 /* 工具2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D687B5C1E99EA1600F10C86 /* 工具2.png */; };
 		8D7C0E481EC7BD9000039DE1 /* EditNotesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7C0E471EC7BD9000039DE1 /* EditNotesView.xib */; };
 		8D7C0E4B1EC7BDAA00039DE1 /* EditNotesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7C0E4A1EC7BDAA00039DE1 /* EditNotesView.m */; };
-		8D8E11C91EB6104100C3BB71 /* MyGuitarNotesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E11C81EB6104100C3BB71 /* MyGuitarNotesView.m */; };
+		8D86A4C21ED074E4008E263F /* NotesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86A4C11ED074E4008E263F /* NotesModel.m */; };
+		8D86A4C51ED077E0008E263F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D86A4C41ED077E0008E263F /* AVFoundation.framework */; };
+		8D86A4C71ED077EF008E263F /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D86A4C61ED077EF008E263F /* CoreAudio.framework */; };
+		8D86A4C91ED1425D008E263F /* default.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 8D86A4C81ED1425D008E263F /* default.sf2 */; };
 		8D9AB57E1EC5FEF5009E2D10 /* NotesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9AB57C1EC5FEF4009E2D10 /* NotesTableViewCell.m */; };
 		8D9AB57F1EC5FEF5009E2D10 /* NotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D9AB57D1EC5FEF5009E2D10 /* NotesTableViewCell.xib */; };
 		8DB11A771E99C655004FB8AF /* NavigatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB11A761E99C655004FB8AF /* NavigatorView.m */; };
+		8DC750F31ED5D3940079644E /* YYSampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC750F21ED5D3940079644E /* YYSampler.m */; };
+		8DC750F51ED5D3D30079644E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC750F41ED5D3D30079644E /* AudioToolbox.framework */; };
+		8DC750F81ED5D92D0079644E /* GeneralUser GS SoftSynth v1.44.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 8DC750F71ED5D92D0079644E /* GeneralUser GS SoftSynth v1.44.sf2 */; };
 		8DC8A6CB1E9E7B660003796F /* 全部歌曲.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DC8A6C71E9E7B660003796F /* 全部歌曲.png */; };
 		8DC8A6CC1E9E7B660003796F /* 我喜欢.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DC8A6C81E9E7B660003796F /* 我喜欢.png */; };
 		8DC8A6CD1E9E7B660003796F /* 下载歌曲.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DC8A6C91E9E7B660003796F /* 下载歌曲.png */; };
@@ -87,6 +95,9 @@
 		8DD138ED1EA25DDE00A236E0 /* AddToListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DD138EB1EA25DDE00A236E0 /* AddToListViewController.xib */; };
 		8DD138F11EA34F1D00A236E0 /* CreateMyMusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD138EF1EA34F1D00A236E0 /* CreateMyMusicListViewController.m */; };
 		8DD138F21EA34F1D00A236E0 /* CreateMyMusicListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DD138F01EA34F1D00A236E0 /* CreateMyMusicListViewController.xib */; };
+		8DDACC1B1EE2FFED00B3FF7D /* C_Ionian_tune.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DDACC1A1EE2FFED00B3FF7D /* C_Ionian_tune.plist */; };
+		8DDACC1E1EE4377900B3FF7D /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DDACC1D1EE4377900B3FF7D /* NotesViewController.m */; };
+		8DDBBE8E1ED19B180051D088 /* Tutorial-1.mid in Resources */ = {isa = PBXBuildFile; fileRef = 8DDBBE8D1ED19B180051D088 /* Tutorial-1.mid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +118,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D0395EB1ED183BD00C152BC /* G103.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = G103.mp3; sourceTree = "<group>"; };
+		8D054B3B1ED32075008F3673 /* Tutorial-2.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Tutorial-2.mid"; sourceTree = "<group>"; };
+		8D1034D01EE75BF500751D24 /* CreateGuitarNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGuitarNotesViewController.h; sourceTree = "<group>"; };
+		8D1034D11EE75BF500751D24 /* CreateGuitarNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGuitarNotesViewController.m; sourceTree = "<group>"; };
+		8D1034D21EE75BF500751D24 /* CreateGuitarNotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateGuitarNotesViewController.xib; sourceTree = "<group>"; };
 		8D13E3891EC7F4F100051995 /* 天空之城version3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "天空之城version3.plist"; sourceTree = "<group>"; };
 		8D15DE1F1E9FB12400F8F4C4 /* ModelDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelDataController.h; sourceTree = "<group>"; };
 		8D15DE201E9FB12400F8F4C4 /* ModelDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelDataController.m; sourceTree = "<group>"; };
@@ -132,9 +148,8 @@
 		8D319A241EB3A7A100358641 /* 工具1@.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "工具1@.png"; path = "图标/工具1@.png"; sourceTree = "<group>"; };
 		8D319A251EB3A7A100358641 /* 乐库1@.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "乐库1@.png"; path = "图标/乐库1@.png"; sourceTree = "<group>"; };
 		8D319A261EB3A7A100358641 /* 搜索1@.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "搜索1@.png"; path = "图标/搜索1@.png"; sourceTree = "<group>"; };
-		8D319A2A1EB432EA00358641 /* NotesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotesModel.h; path = "吉他谱/NotesModel.h"; sourceTree = "<group>"; };
-		8D319A2B1EB432EA00358641 /* NotesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotesModel.m; path = "吉他谱/NotesModel.m"; sourceTree = "<group>"; };
 		8D319A2D1EB573EE00358641 /* 天空之城version1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "天空之城version1.plist"; sourceTree = "<group>"; };
+		8D45A4E61ECE538D003AE999 /* 天空之城version4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "天空之城version4.plist"; sourceTree = "<group>"; };
 		8D4835E41E9BCDA800A70BCC /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		8D4835E91E9BCDB800A70BCC /* MusicLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicLibraryViewController.xib; sourceTree = "<group>"; };
 		8D4835EE1E9BCDC300A70BCC /* ToolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolViewController.xib; sourceTree = "<group>"; };
@@ -145,10 +160,6 @@
 		8D4835F71E9BD13700A70BCC /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		8D4835F81E9BD13700A70BCC /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		8D5676901EC1EE3A0071D58B /* 天空之城version2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "天空之城version2.plist"; sourceTree = "<group>"; };
-		8D5676921EC1F0BF0071D58B /* NotesModel2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesModel2.h; sourceTree = "<group>"; };
-		8D5676931EC1F0BF0071D58B /* NotesModel2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesModel2.m; sourceTree = "<group>"; };
-		8D5676951EC209C40071D58B /* MyGuitarNotesView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGuitarNotesView2.h; sourceTree = "<group>"; };
-		8D5676961EC209C50071D58B /* MyGuitarNotesView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGuitarNotesView2.m; sourceTree = "<group>"; };
 		8D61E1891E99C0C100B2DDA9 /* MusicUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicUtils.h; path = Utils/MusicUtils.h; sourceTree = "<group>"; };
 		8D61E18A1E99C0C100B2DDA9 /* MusicUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MusicUtils.m; path = Utils/MusicUtils.m; sourceTree = "<group>"; };
 		8D61E18C1E99C0CF00B2DDA9 /* MusicControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicControl.h; path = MusicCotrol/MusicControl.h; sourceTree = "<group>"; };
@@ -188,17 +199,25 @@
 		8D687B561E99E9E100F10C86 /* 搜索1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "搜索1.png"; path = "图标/搜索1.png"; sourceTree = "<group>"; };
 		8D687B5B1E99EA1600F10C86 /* 工具1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "工具1.png"; path = "图标/工具1.png"; sourceTree = "<group>"; };
 		8D687B5C1E99EA1600F10C86 /* 工具2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "工具2.png"; path = "图标/工具2.png"; sourceTree = "<group>"; };
+		8D7594C11ED45DEB00BC1F77 /* guitar.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitar.sf2; sourceTree = "<group>"; };
 		8D7C0E471EC7BD9000039DE1 /* EditNotesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditNotesView.xib; sourceTree = "<group>"; };
 		8D7C0E491EC7BDAA00039DE1 /* EditNotesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditNotesView.h; sourceTree = "<group>"; };
 		8D7C0E4A1EC7BDAA00039DE1 /* EditNotesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditNotesView.m; sourceTree = "<group>"; };
 		8D7C0E4C1EC7CD4300039DE1 /* NotesTableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesTableViewDelegate.h; sourceTree = "<group>"; };
-		8D8E11C71EB6104100C3BB71 /* MyGuitarNotesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyGuitarNotesView.h; path = "吉他谱/MyGuitarNotesView.h"; sourceTree = "<group>"; };
-		8D8E11C81EB6104100C3BB71 /* MyGuitarNotesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyGuitarNotesView.m; path = "吉他谱/MyGuitarNotesView.m"; sourceTree = "<group>"; };
+		8D86A4C01ED074E4008E263F /* NotesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotesModel.h; path = "吉他谱/NotesModel.h"; sourceTree = "<group>"; };
+		8D86A4C11ED074E4008E263F /* NotesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotesModel.m; path = "吉他谱/NotesModel.m"; sourceTree = "<group>"; };
+		8D86A4C41ED077E0008E263F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8D86A4C61ED077EF008E263F /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		8D86A4C81ED1425D008E263F /* default.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.sf2; sourceTree = "<group>"; };
 		8D9AB57B1EC5FEF4009E2D10 /* NotesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesTableViewCell.h; sourceTree = "<group>"; };
 		8D9AB57C1EC5FEF4009E2D10 /* NotesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesTableViewCell.m; sourceTree = "<group>"; };
 		8D9AB57D1EC5FEF5009E2D10 /* NotesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesTableViewCell.xib; sourceTree = "<group>"; };
 		8DB11A751E99C655004FB8AF /* NavigatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigatorView.h; path = "导航栏/NavigatorView.h"; sourceTree = "<group>"; };
 		8DB11A761E99C655004FB8AF /* NavigatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigatorView.m; path = "导航栏/NavigatorView.m"; sourceTree = "<group>"; };
+		8DC750F11ED5D3940079644E /* YYSampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSampler.h; sourceTree = "<group>"; };
+		8DC750F21ED5D3940079644E /* YYSampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSampler.m; sourceTree = "<group>"; };
+		8DC750F41ED5D3D30079644E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8DC750F71ED5D92D0079644E /* GeneralUser GS SoftSynth v1.44.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GeneralUser GS SoftSynth v1.44.sf2"; sourceTree = "<group>"; };
 		8DC8A6C71E9E7B660003796F /* 全部歌曲.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "全部歌曲.png"; path = "图标/全部歌曲.png"; sourceTree = "<group>"; };
 		8DC8A6C81E9E7B660003796F /* 我喜欢.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "我喜欢.png"; path = "图标/我喜欢.png"; sourceTree = "<group>"; };
 		8DC8A6C91E9E7B660003796F /* 下载歌曲.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "下载歌曲.png"; path = "图标/下载歌曲.png"; sourceTree = "<group>"; };
@@ -220,6 +239,10 @@
 		8DD138EE1EA34F1D00A236E0 /* CreateMyMusicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateMyMusicListViewController.h; sourceTree = "<group>"; };
 		8DD138EF1EA34F1D00A236E0 /* CreateMyMusicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateMyMusicListViewController.m; sourceTree = "<group>"; };
 		8DD138F01EA34F1D00A236E0 /* CreateMyMusicListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateMyMusicListViewController.xib; sourceTree = "<group>"; };
+		8DDACC1A1EE2FFED00B3FF7D /* C_Ionian_tune.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = C_Ionian_tune.plist; sourceTree = "<group>"; };
+		8DDACC1C1EE4377900B3FF7D /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
+		8DDACC1D1EE4377900B3FF7D /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		8DDBBE8D1ED19B180051D088 /* Tutorial-1.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Tutorial-1.mid"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +250,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DC750F51ED5D3D30079644E /* AudioToolbox.framework in Frameworks */,
+				8D86A4C71ED077EF008E263F /* CoreAudio.framework in Frameworks */,
+				8D86A4C51ED077E0008E263F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +335,7 @@
 				8D1CA0091E7E0F5500C0101D /* MyMusicTests */,
 				8D1CA0141E7E0F5500C0101D /* MyMusicUITests */,
 				8D1C9FEE1E7E0F5500C0101D /* Products */,
+				8D86A4C31ED077E0008E263F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -352,10 +379,18 @@
 		8D1C9FF01E7E0F5500C0101D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8DC750F71ED5D92D0079644E /* GeneralUser GS SoftSynth v1.44.sf2 */,
+				8D7594C11ED45DEB00BC1F77 /* guitar.sf2 */,
+				8D054B3B1ED32075008F3673 /* Tutorial-2.mid */,
+				8DDBBE8D1ED19B180051D088 /* Tutorial-1.mid */,
+				8D0395EB1ED183BD00C152BC /* G103.mp3 */,
+				8D86A4C81ED1425D008E263F /* default.sf2 */,
+				8D45A4E61ECE538D003AE999 /* 天空之城version4.plist */,
 				8D13E3891EC7F4F100051995 /* 天空之城version3.plist */,
 				8D5676901EC1EE3A0071D58B /* 天空之城version2.plist */,
 				8D319A2D1EB573EE00358641 /* 天空之城version1.plist */,
 				8D1C9FF11E7E0F5500C0101D /* main.m */,
+				8DDACC1A1EE2FFED00B3FF7D /* C_Ionian_tune.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -400,6 +435,8 @@
 		8D4835DF1E9BCD4E00A70BCC /* 工具界面 */ = {
 			isa = PBXGroup;
 			children = (
+				8DC750F11ED5D3940079644E /* YYSampler.h */,
+				8DC750F21ED5D3940079644E /* YYSampler.m */,
 				8D4835F11E9BD0DE00A70BCC /* ToolViewController.h */,
 				8D4835F21E9BD0DE00A70BCC /* ToolViewController.m */,
 				8D4835EE1E9BCDC300A70BCC /* ToolViewController.xib */,
@@ -413,10 +450,6 @@
 				8D4835F41E9BD11900A70BCC /* MusicLibraryViewController.h */,
 				8D4835F51E9BD11900A70BCC /* MusicLibraryViewController.m */,
 				8D4835E91E9BCDB800A70BCC /* MusicLibraryViewController.xib */,
-				8D5676921EC1F0BF0071D58B /* NotesModel2.h */,
-				8D5676931EC1F0BF0071D58B /* NotesModel2.m */,
-				8D5676951EC209C40071D58B /* MyGuitarNotesView2.h */,
-				8D5676961EC209C50071D58B /* MyGuitarNotesView2.m */,
 			);
 			path = "乐库界面";
 			sourceTree = "<group>";
@@ -427,12 +460,17 @@
 				8D4835F71E9BD13700A70BCC /* SearchViewController.h */,
 				8D4835F81E9BD13700A70BCC /* SearchViewController.m */,
 				8D4835E41E9BCDA800A70BCC /* SearchViewController.xib */,
+				8DDACC1C1EE4377900B3FF7D /* NotesViewController.h */,
+				8DDACC1D1EE4377900B3FF7D /* NotesViewController.m */,
 				8D9AB57B1EC5FEF4009E2D10 /* NotesTableViewCell.h */,
 				8D9AB57C1EC5FEF4009E2D10 /* NotesTableViewCell.m */,
 				8D9AB57D1EC5FEF5009E2D10 /* NotesTableViewCell.xib */,
 				8D7C0E491EC7BDAA00039DE1 /* EditNotesView.h */,
 				8D7C0E4A1EC7BDAA00039DE1 /* EditNotesView.m */,
 				8D7C0E471EC7BD9000039DE1 /* EditNotesView.xib */,
+				8D1034D01EE75BF500751D24 /* CreateGuitarNotesViewController.h */,
+				8D1034D11EE75BF500751D24 /* CreateGuitarNotesViewController.m */,
+				8D1034D21EE75BF500751D24 /* CreateGuitarNotesViewController.xib */,
 				8D7C0E4C1EC7CD4300039DE1 /* NotesTableViewDelegate.h */,
 			);
 			path = "搜索界面";
@@ -474,6 +512,16 @@
 			name = "导航栏";
 			sourceTree = "<group>";
 		};
+		8D86A4C31ED077E0008E263F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DC750F41ED5D3D30079644E /* AudioToolbox.framework */,
+				8D86A4C61ED077EF008E263F /* CoreAudio.framework */,
+				8D86A4C41ED077E0008E263F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8DD138CE1EA19B1600A236E0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -504,10 +552,8 @@
 		8DD521E51EAF706900AC7F3D /* 吉他谱 */ = {
 			isa = PBXGroup;
 			children = (
-				8D319A2A1EB432EA00358641 /* NotesModel.h */,
-				8D319A2B1EB432EA00358641 /* NotesModel.m */,
-				8D8E11C71EB6104100C3BB71 /* MyGuitarNotesView.h */,
-				8D8E11C81EB6104100C3BB71 /* MyGuitarNotesView.m */,
+				8D86A4C01ED074E4008E263F /* NotesModel.h */,
+				8D86A4C11ED074E4008E263F /* NotesModel.m */,
 			);
 			name = "吉他谱";
 			sourceTree = "<group>";
@@ -675,6 +721,7 @@
 				8DC8A6CB1E9E7B660003796F /* 全部歌曲.png in Resources */,
 				8D61E1A91E99C0DE00B2DDA9 /* 随机.png in Resources */,
 				8DD138ED1EA25DDE00A236E0 /* AddToListViewController.xib in Resources */,
+				8DDBBE8E1ED19B180051D088 /* Tutorial-1.mid in Resources */,
 				8D319A271EB3A7A200358641 /* 工具1@.png in Resources */,
 				8D319A281EB3A7A200358641 /* 乐库1@.png in Resources */,
 				8D319A291EB3A7A200358641 /* 搜索1@.png in Resources */,
@@ -694,6 +741,7 @@
 				8DD138DA1EA19B1600A236E0 /* MyMusicViewController.xib in Resources */,
 				8D687B591E99E9E100F10C86 /* 搜索1.png in Resources */,
 				8D4835F01E9BCDC300A70BCC /* ToolViewController.xib in Resources */,
+				8D054B3C1ED32075008F3673 /* Tutorial-2.mid in Resources */,
 				8DD138D91EA19B1600A236E0 /* MyMusicTableViewCell.xib in Resources */,
 				8D61E1AA1E99C0DE00B2DDA9 /* 暂停.png in Resources */,
 				8DD138F21EA34F1D00A236E0 /* CreateMyMusicListViewController.xib in Resources */,
@@ -709,16 +757,22 @@
 				8D4835EB1E9BCDB800A70BCC /* MusicLibraryViewController.xib in Resources */,
 				8D7C0E481EC7BD9000039DE1 /* EditNotesView.xib in Resources */,
 				8D61E1A41E99C0DE00B2DDA9 /* 列表.png in Resources */,
+				8D0395EC1ED183BD00C152BC /* G103.mp3 in Resources */,
 				8D61E1A11E99C0DE00B2DDA9 /* 静音.png in Resources */,
 				8D1C9FFD1E7E0F5500C0101D /* Assets.xcassets in Resources */,
+				8DDACC1B1EE2FFED00B3FF7D /* C_Ionian_tune.plist in Resources */,
 				8D319A1F1EB3A43B00358641 /* 我的音乐1.png in Resources */,
 				8DD138E11EA1AA0600A236E0 /* ItemSetTableViewController.xib in Resources */,
 				8DC8A6CE1E9E7B660003796F /* 最近播放.png in Resources */,
+				8D45A4E71ECE538D003AE999 /* 天空之城version4.plist in Resources */,
+				8DC750F81ED5D92D0079644E /* GeneralUser GS SoftSynth v1.44.sf2 in Resources */,
 				8D1C9FFB1E7E0F5500C0101D /* Main.storyboard in Resources */,
 				8DC8A6CC1E9E7B660003796F /* 我喜欢.png in Resources */,
 				8D5676911EC1EE3A0071D58B /* 天空之城version2.plist in Resources */,
+				8D1034D41EE75BF500751D24 /* CreateGuitarNotesViewController.xib in Resources */,
 				8D4835E61E9BCDA800A70BCC /* SearchViewController.xib in Resources */,
 				8D61E1A51E99C0DE00B2DDA9 /* 列表循环.png in Resources */,
+				8D86A4C91ED1425D008E263F /* default.sf2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,16 +800,18 @@
 				8D61E1B21E99C0EB00B2DDA9 /* ViewController.m in Sources */,
 				8D1C9FF51E7E0F5500C0101D /* AppDelegate.m in Sources */,
 				8D61E1C81E99C12700B2DDA9 /* MusicToolView.m in Sources */,
+				8DDACC1E1EE4377900B3FF7D /* NotesViewController.m in Sources */,
 				8D61E1C41E99C11D00B2DDA9 /* PopupPlayingListViewController.m in Sources */,
 				8DB11A771E99C655004FB8AF /* NavigatorView.m in Sources */,
+				8D1034D31EE75BF500751D24 /* CreateGuitarNotesViewController.m in Sources */,
 				8D61E18B1E99C0C100B2DDA9 /* MusicUtils.m in Sources */,
 				8D4835F91E9BD13700A70BCC /* SearchViewController.m in Sources */,
 				8D9AB57E1EC5FEF5009E2D10 /* NotesTableViewCell.m in Sources */,
 				8D1C9FF21E7E0F5500C0101D /* main.m in Sources */,
-				8D8E11C91EB6104100C3BB71 /* MyGuitarNotesView.m in Sources */,
 				8D687B4E1E99D18B00F10C86 /* NavigatorItem.m in Sources */,
 				8D15DE211E9FB12400F8F4C4 /* ModelDataController.m in Sources */,
 				8DD138EC1EA25DDE00A236E0 /* AddToListViewController.m in Sources */,
+				8D86A4C21ED074E4008E263F /* NotesModel.m in Sources */,
 				8DD138D81EA19B1600A236E0 /* MyMusicViewController.m in Sources */,
 				8DD138D71EA19B1600A236E0 /* MyMusicTableViewCell.m in Sources */,
 				8DD138E01EA1AA0600A236E0 /* ItemSetTableViewController.m in Sources */,
@@ -763,12 +819,10 @@
 				8D61E18E1E99C0CF00B2DDA9 /* MusicControl.m in Sources */,
 				8D7C0E4B1EC7BDAA00039DE1 /* EditNotesView.m in Sources */,
 				8D4835F61E9BD11900A70BCC /* MusicLibraryViewController.m in Sources */,
+				8DC750F31ED5D3940079644E /* YYSampler.m in Sources */,
 				8DD138F11EA34F1D00A236E0 /* CreateMyMusicListViewController.m in Sources */,
-				8D5676941EC1F0BF0071D58B /* NotesModel2.m in Sources */,
 				8D4835F31E9BD0DE00A70BCC /* ToolViewController.m in Sources */,
 				8D319A181EB337BA00358641 /* NavigatorTabBar.m in Sources */,
-				8D319A2C1EB432EA00358641 /* NotesModel.m in Sources */,
-				8D5676971EC209C50071D58B /* MyGuitarNotesView2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

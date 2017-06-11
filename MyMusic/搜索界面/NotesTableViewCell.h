@@ -12,7 +12,7 @@
 
 @interface NotesTableViewCell : UITableViewCell
 
-@property (assign, nonatomic) int lineNo;
+@property (assign, nonatomic) long lineNo;
 
 @property (strong, nonatomic) IBOutlet UIImageView *notesView;
 

@@ -25,6 +25,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnNum9;
 @property (strong, nonatomic) IBOutlet UIButton *btnInsertBar;
 @property (strong, nonatomic) IBOutlet UIButton *btnRemoveBar;
+@property (strong, nonatomic) IBOutlet UIButton *btnRemoveNote;
 
 +(instancetype)makeView;
 
