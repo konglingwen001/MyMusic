@@ -11,6 +11,7 @@
 #import "ToolViewController.h"
 
 @interface ToolViewController ()<AVAudioPlayerDelegate, AVAudioRecorderDelegate>
+@property (strong, nonatomic) IBOutlet UISwitch *switchBtn;
 
 // 录音存储路径
 @property (nonatomic, strong) NSURL *recordFile;
@@ -86,7 +87,13 @@
 }
 - (IBAction)test:(id)sender {
     UIButton *button = (UIButton *)sender;
+    
     [self.sampler triggerNote:button.tag isOn:YES];
+    if (self.switchBtn.enabled == YES) {
+        [self.sampler triggerNote:button.tag - 10 isOn:YES];
+        [self.sampler triggerNote:button.tag + 10 isOn:YES];
+    }
+    
 }
 
 /*

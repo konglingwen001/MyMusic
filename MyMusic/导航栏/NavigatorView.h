@@ -18,7 +18,7 @@
 
 @interface NavigatorView : UIView
 
-@property (nonatomic, assign) id<NavigatorDelegate> delegate;
+@property (nonatomic, weak) id<NavigatorDelegate> delegate;
 
 +(instancetype)makeItem;
 

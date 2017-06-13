@@ -59,7 +59,6 @@
     musicToolView = [MusicToolView makeItem];
     _musicController.musicToolView = musicToolView;
     musicToolView.delegate = self;
-    //[musicToolView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [musicToolView setFrame:CGRectMake(0, self.view.frame.size.height - 80, self.view.frame.size.width, 80)];
     [self.view addSubview:musicToolView];
     

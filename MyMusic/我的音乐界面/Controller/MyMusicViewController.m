@@ -261,8 +261,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == self.masterTableView) {
         
-        masterTableViewSelectedSection = indexPath.section;
-        masterTableViewSelectedIndex = indexPath.row;
+        masterTableViewSelectedSection = (int)indexPath.section;
+        masterTableViewSelectedIndex = (int)indexPath.row;
         
         if (indexPath.section == 0) {
             [self.detailTableView reloadData];

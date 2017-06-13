@@ -11,7 +11,7 @@
 
 @interface EditNotesView : UIView
 
-@property (strong, nonatomic) id<NotesTableViewDelegate> delegate;
+@property (weak, nonatomic) id<NotesTableViewDelegate> delegate;
 
 @property (strong, nonatomic) IBOutlet UIButton *btnNum0;
 @property (strong, nonatomic) IBOutlet UIButton *btnNum1;

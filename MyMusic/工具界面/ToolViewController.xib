@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToolViewController">
             <connections>
+                <outlet property="switchBtn" destination="UYX-wa-M2b" id="LCd-yq-Bnk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="USm-rW-bhF"/>
             </connections>
         </placeholder>
@@ -371,6 +372,10 @@
                         <action selector="test:" destination="-1" eventType="touchUpInside" id="JB2-0p-LEf"/>
                     </connections>
                 </button>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UYX-wa-M2b">
+                    <rect key="frame" x="420" y="137" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </switch>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <nil key="simulatedStatusBarMetrics"/>

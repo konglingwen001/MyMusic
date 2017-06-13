@@ -11,11 +11,11 @@
 
 @implementation NavigatorView
 {
-NavigatorItem *searchItem;
-NavigatorItem *myMusicItem;
-NavigatorItem *musicLibraryItem;
-NavigatorItem *toolItem;
-NavigatorItem *settingItem;
+    NavigatorItem *searchItem;
+    NavigatorItem *myMusicItem;
+    NavigatorItem *musicLibraryItem;
+    NavigatorItem *toolItem;
+    NavigatorItem *settingItem;
 }
 
 /*!

@@ -16,6 +16,6 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *notesView;
 
-@property (strong, nonatomic) id<NotesTableViewDelegate> delegate;
+@property (weak, nonatomic) id<NotesTableViewDelegate> delegate;
 
 @end

@@ -21,7 +21,7 @@
     UITableView *notesTableView;
     NSString *dataFilePath;
     NSString *tmpFilePath;
-    NSArray *files;
+    NSMutableArray *files;
 }
 
 -(void)viewDidLoad {
@@ -37,12 +37,30 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     dataFilePath = [[paths objectAtIndex:0] stringByAppendingString:@"/"];
     tmpFilePath = NSTemporaryDirectory();
-    NSLog(@"%@", dataFilePath);
-    NSLog(@"%@", tmpFilePath);
-    files = [[NSFileManager defaultManager] subpathsOfDirectoryAtPath:dataFilePath error:nil];
-    
-    
+    files = [self getGuitarNotesFiles];
 }
+
+
+/**
+ 获取document路径下所有吉他谱文件
+
+ @return 吉他谱文件名
+ */
+-(NSMutableArray *)getGuitarNotesFiles {
+    NSMutableArray *resultFiles = [[NSMutableArray alloc] init];
+    NSMutableArray *guitarNotesFiles = [[[NSFileManager defaultManager] subpathsOfDirectoryAtPath:dataFilePath error:nil] mutableCopy];
+    for (int i = 0; i < guitarNotesFiles.count; i++) {
+        NSString *fileName = guitarNotesFiles[i];
+        if (![fileName hasSuffix:@".plist"]) {
+            [guitarNotesFiles removeObject:fileName];
+            i--;
+            continue;
+        }
+        [resultFiles addObject:[fileName componentsSeparatedByString:@"."][0]];
+    }
+    return resultFiles;
+}
+
 - (IBAction)test:(id)sender {
     NotesViewController *notesController = [[NotesViewController alloc] init];
     notesController.guitarNotesTitle = @"天空之城version4";
@@ -50,6 +68,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    files = [self getGuitarNotesFiles];
     [notesTableView reloadData];
     [notesTableView setFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 200)];
 }

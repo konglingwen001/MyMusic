@@ -9,15 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "PresentViewControllerDelegate.h"
 
-//@protocol PresentViewControllerDelegate <NSObject>
-//
-//-(void)presentViewController:(UIViewController *)viewController fromView:(UIView *)sourceView;
-//
-//@end
-
 @interface MusicToolView : UIView
 
-@property (nonatomic, strong) id<PresentViewControllerDelegate> delegate;
+@property (nonatomic, weak) id<PresentViewControllerDelegate> delegate;
 
 +(instancetype)makeItem;
 

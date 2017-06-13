@@ -11,7 +11,7 @@
 
 @interface MyMusicTableViewCell : UITableViewCell
 
-@property (nonatomic, strong) id<PresentViewControllerDelegate> delegate;
+@property (nonatomic, weak) id<PresentViewControllerDelegate> delegate;
 
 @property (strong, nonatomic) IBOutlet UILabel *lblSongName;
 @property (strong, nonatomic) IBOutlet UILabel *lblArtistName;
